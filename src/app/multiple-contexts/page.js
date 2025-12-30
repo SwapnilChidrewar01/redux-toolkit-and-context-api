@@ -15,7 +15,7 @@ export default function MultipleContextsPage() {
         <div className={`flex min-h-screen items-center justify-center ${theme === 'dark' ? 'bg-zinc-900' : 'bg-zinc-50'}`}>
             <main className={`flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 ${theme === 'dark' ? 'bg-black text-white' : 'bg-white text-black'} sm:items-start`}>
                 <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left w-full">
-                    <div className="flex gap-4 mb-4">
+                    <div className="flex gap-4 mb-4 flex-wrap">
                         <Link
                             href="/"
                             className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition-colors"
@@ -33,6 +33,12 @@ export default function MultipleContextsPage() {
                             className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition-colors"
                         >
                             Multiple Contexts
+                        </Link>
+                        <Link
+                            href="/memoization"
+                            className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded transition-colors"
+                        >
+                            Memoization
                         </Link>
                     </div>
 
